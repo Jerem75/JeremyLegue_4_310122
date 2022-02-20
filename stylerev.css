@@ -18,8 +18,22 @@ button {
     outline: none!important;
 }
 
+.color-banniere{
+    color: white;
+}
+
+div div ul li a{
+    font-size: 14pt;
+    font-weight: lighter;
+}
+
+ul{
+    list-style-type: none;
+}
+
 li a{
     font-weight: bold;
+    font-size: 15.5pt;
 }
 a:hover {
     text-decoration: none;
@@ -89,6 +103,8 @@ a:hover {
     background: top no-repeat;
 }
 
+
+
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -100,7 +116,6 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -142,7 +157,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(0, 0, 0);
 }
 
 .d-bloc .a-btn:hover,
@@ -659,7 +674,6 @@ a[data-lightbox]:hover img {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -670,7 +684,15 @@ label,
 a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: #575757!important;
+    color: #000000!important;
+}
+
+input:focus{
+    background-color: #c27956;
+}
+
+#message:focus{
+    background-color: #c27956;
 }
 
 .container {
@@ -696,7 +718,7 @@ a {
 }
 
 p {
-    font-size: 15px;
+    font-size: 15pt;
 }
 
 .tight-width-whitespace {
@@ -724,12 +746,13 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 18pt;
     line-height: 1.4em;
+    color: #000000;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 16pt;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -747,6 +770,11 @@ h1 {
 
 h4 {
     color: #333333!important;
+    font-size: 14pt;
+}
+
+.size{
+    font-size: 14pt;
 }
 
 .icons {
@@ -755,7 +783,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .portfolio-thumb {
@@ -799,7 +827,8 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000!important;
+    font-size: 15pt;
 }
 
 .btn-atomic-tangerine:hover {
@@ -808,8 +837,8 @@ h4 {
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
-    font-size: 16px;
+    /* color: #FFFFFF!important; */
+    font-size: 16pt;
 }
 
 .ltc-white:hover {
@@ -842,7 +871,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -892,9 +921,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-       
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
